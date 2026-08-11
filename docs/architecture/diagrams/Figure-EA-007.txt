@@ -1,0 +1,61 @@
+                          Figure EA-007
+              AstraMind Execution Context(domain object) Architecture
+
+
+                    +----------------------------------+
+                    |         User Request             |
+                    +----------------+-----------------+
+                                     |
+                                     v
+                  +--------------------------------------+
+                  |      Orchestration Engine            |
+                  +----------------+---------------------+
+                                   |
+                                   v
+         =========================================================
+                     Creates Execution Context
+         =========================================================
+
+        +--------------------------------------------------------+
+        |                Execution Context                        |
+        +--------------------------------------------------------+
+        |                                                        |
+        |  Identity                                               |
+        |  ----------------------------                          |
+        |  • Request ID                                          |
+        |  • Session ID                                          |
+        |  • Workflow ID                                         |
+        |  • Template Version                                    |
+        |                                                        |
+        |  Input Data                                             |
+        |  ----------------------------                          |
+        |  • Prompt                                               |
+        |  • Images                                               |
+        |  • Documents                                            |
+        |  • Parameters                                           |
+        |  • Variables                                            |
+        |                                                        |
+        |  Runtime State                                          |
+        |  ----------------------------                          |
+        |  • Current Node                                         |
+        |  • Execution State                                      |
+        |  • Progress                                              |
+        |  • Retry Count                                           |
+        |                                                        |
+        |  Output Data                                             |
+        |  ----------------------------                          |
+        |  • Generated Images                                     |
+        |  • Generated Text                                       |
+        |  • Metadata                                              |
+        |                                                        |
+        |  Diagnostics                                             |
+        |  ----------------------------                          |
+        |  • Errors                                                |
+        |  • Logs                                                  |
+        |  • Execution Metrics                                    |
+        +--------------------------------------------------------+
+                                   |
+                                   v
+                    +-------------------------------+
+                    |      Workflow Execution       |
+                    +-------------------------------+

@@ -1,0 +1,44 @@
+# Figure EA-018
+
+## AstraMind Architectural Foundation
+
+```text
+                         Figure EA-018
+
+                  AstraMind Architectural Foundation
+
+
+                 Business Requirements
+                           │
+                           ▼
+            +-------------------------------+
+            | Software Architecture         |
+            | Specification (SAS)           |
+            +---------------+---------------+
+                            │
+                            ▼
+            +-------------------------------+
+            | Architecture Decision Records |
+            | (ADRs)                        |
+            +---------------+---------------+
+                            │
+                            ▼
+            +-------------------------------+
+            | Domain-Centric Architecture   |
+            +---------------+---------------+
+                            │
+                            ▼
+            +-------------------------------+
+            | Implementation                |
+            +---------------+---------------+
+                            │
+                            ▼
+            +-------------------------------+
+            | Testing & Validation          |
+            +---------------+---------------+
+                            │
+                            ▼
+            +-------------------------------+
+            | Production Deployment         |
+            +-------------------------------+
+```

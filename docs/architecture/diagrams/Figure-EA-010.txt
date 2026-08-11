@@ -1,0 +1,30 @@
+# Figure EA-010
+
+## Template Lifecycle
+
+```
+                  Figure EA-010
+
+                 Template Lifecycle
+
+
+           Template Definition
+                    |
+                    v
+            Version Control
+                    |
+                    v
+             Template Release
+                    |
+                    v
+           Workflow Instantiation
+                    |
+                    v
+           Workflow Execution
+                    |
+                    v
+           Execution Complete
+                    |
+                    v
+              Archive Instance
+```

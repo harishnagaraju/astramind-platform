@@ -1,0 +1,24 @@
+# Figure EA-005
+
+## Domain Event Flow
+
+```
+                 User Request
+                      |
+                      v
+             Workflow Started
+                      |
+                      v
+              Nodes Executed
+                      |
+          +-----------+-----------+
+          |                       |
+          v                       v
+     Success                  Failure
+          |                       |
+          v                       v
+ WorkflowCompleted      WorkflowFailed
+          |
+          v
+     Response Returned
+```

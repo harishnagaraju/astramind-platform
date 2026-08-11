@@ -1,0 +1,48 @@
+```text
+                    Figure EA-014
+
+User
+ |
+ | Submit Request
+ v
+Presentation
+ |
+ | Validate
+ v
+Application
+ |
+ | Create Request
+ v
+Orchestration Engine
+ |
+ | Select Template
+ v
+Workflow Engine
+ |
+ | Execute Nodes
+ v
+Connector
+ |
+ | Invoke Provider
+ v
+AI Runtime
+ |
+ | Run Model
+ v
+Connector
+ |
+ | Transform Result
+ v
+Workflow
+ |
+ | Complete Execution
+ v
+Application
+ |
+ | Return Response
+ v
+Presentation
+ |
+ v
+User
+```

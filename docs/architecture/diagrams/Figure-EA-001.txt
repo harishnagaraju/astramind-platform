@@ -1,0 +1,129 @@
+Figure EA-001
+AstraMind Enterprise Architecture
+
+                                     Users
+                                        │
+        ┌───────────────────────────────┼──────────────────────────────┐
+        │                               │                              │
+        ▼                               ▼                              ▼
+ +---------------+              +---------------+             +---------------+
+ |   Web UI      |              |   Desktop UI  |             |     CLI       |
+ +---------------+              +---------------+             +---------------+
+                │                       │                        │
+                └───────────────┬───────┴──────────────┬─────────┘
+                                ▼
+                     +-------------------------+
+                     |   Presentation Layer    |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |   Application Layer     |
+                     |-------------------------|
+                     | API Gateway             |
+                     | Authentication          |
+                     | Authorization           |
+                     | Session Management      |
+                     | Request Validation      |
+                     +-------------------------+
+                                │
+                                ▼
+══════════════════════════════════════════════════════════════════════════════
+
+                     +-------------------------+
+                     |      Domain Layer       |
+                     +-------------------------+
+                     | Orchestration Engine    |
+                     | Workflow Engine         |
+                     | Template Repository     |
+                     | Prompt Manager          |
+                     | Knowledge Manager       |
+                     | Session Manager         |
+                     | Agent Manager           |
+                     | Business Rules          |
+                     +-------------------------+
+
+══════════════════════════════════════════════════════════════════════════════
+                                │
+                                ▼
+
+                     +-------------------------+
+                     |       Port Layer        |
+                     +-------------------------+
+                     | AI Port                 |
+                     | Storage Port            |
+                     | Database Port           |
+                     | Cache Port              |
+                     | Notification Port       |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |     Adapter Layer       |
+                     +-------------------------+
+                     | ComfyUI Adapter         |
+                     | OpenAI Adapter          |
+                     | Ollama Adapter          |
+                     | PostgreSQL Adapter      |
+                     | Redis Adapter           |
+                     | Plugin Adapters         |
+                     +-------------------------+
+                                │
+                                ▼
+
+══════════════════════════════════════════════════════════════════════════════
+
+                     +-------------------------+
+                     | Infrastructure Layer    |
+                     +-------------------------+
+                     | AI Runtime              |
+                     | Database                |
+                     | Storage                 |
+                     | Logging                 |
+                     | Monitoring              |
+                     | Configuration           |
+                     | Scheduling              |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |    Runtime Layer        |
+                     +-------------------------+
+                     | PyTorch                 |
+                     | TensorRT                |
+                     | ONNX Runtime            |
+                     | llama.cpp               |
+                     | vLLM                    |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |     Model Layer         |
+                     +-------------------------+
+                     | Gemma                   |
+                     | Llama                   |
+                     | Qwen                    |
+                     | Flux                    |
+                     | HiDream                 |
+                     | Wan                     |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |   Knowledge Layer       |
+                     +-------------------------+
+                     | Weights                 |
+                     | LoRA                    |
+                     | Embeddings              |
+                     | Checkpoints             |
+                     +-------------------------+
+                                │
+                                ▼
+                     +-------------------------+
+                     |    Hardware Layer       |
+                     +-------------------------+
+                     | CPU                     |
+                     | GPU                     |
+                     | TPU                     |
+                     | GPU Cluster             |
+                     +-------------------------+

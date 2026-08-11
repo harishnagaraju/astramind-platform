@@ -1,0 +1,40 @@
+# Figure EA-012
+
+## Connector Request Flow
+
+```text
+                     Figure EA-012
+
+              Connector Request Lifecycle
+
+
+Business Request
+
+↓
+
+Business Port
+
+↓
+
+Connector
+
+↓
+
+Authentication
+
+↓
+
+Request Mapping
+
+↓
+
+External API
+
+↓
+
+Response Mapping
+
+↓
+
+Business Response
+```

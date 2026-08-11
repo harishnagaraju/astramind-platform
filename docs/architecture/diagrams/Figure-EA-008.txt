@@ -1,0 +1,26 @@
+# Figure EA-008
+
+## Execution State Machine
+
+```
+              Created
+                  │
+                  ▼
+            Initialized
+                  │
+                  ▼
+              Running
+          ┌──────┴───────┐
+          ▼              ▼
+      Waiting         Completed
+          │
+          ▼
+      Running
+          │
+          ▼
+       Failed
+
+or
+
+Cancelled
+```
